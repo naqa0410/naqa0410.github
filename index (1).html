@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Antar Jemput</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Laundry Antar Jemput</h1>
+            <nav>
+                <ul>
+                    <li><a href="#services">Antar Jemput</a></li>
+                    <li><a href="#order">Jemput</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="hero">
+        <div class="container">
+            <h2>Setrika dan Cuci pakaian Tanpa Ribet</h2>
+            <p>Kami siap antar jemput laundry Anda dengan cepat dan terpercaya.</p>
+            <a href="#order" class="btn">Jemput Exspress</a>
+        </div>
+    </section>
+    
+    <section id="services">
+        <div class="container">
+            <h2>Layanan Kami</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <h3>Cuci Kering</h3>
+                    <p>Harga Rp.4.000</p>
+                </div>
+                <div class="service-item">
+                    <h3>Setrika</h3>
+                    <p>Harga Rp.3.500</p>
+                </div>
+                <div class="service-item">
+                    <h3>Cuci dan Setrika</h3>
+                    <p>Harga Rp.5000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="order">
+        <div class="container">
+            <h2>Formulir Penjemputan Rumah Setrika Okta</h2>
+            <!-- <form>
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="address">Alamat:</label>
+                <input type="text" id="address" name="address" required>
+                
+                <label for="phone">Telepon:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="service">Jenis Layanan Rumah Setrika Okta:</label>
+                <select id="service" name="service">
+                    <option value="cuci-kering">Cuci Kering</option>
+                    <option value="setrika">Setrika</option>
+                    <option value="paket-hemat">Cuci dan Setrika</option>
+                </select>
+                
+                <button type="submit">Jemput Exspress</button>
+            </form> -->
+
+            <form id="form">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="address">Alamat:</label>
+                <input type="text" id="address" name="address" required>
+                
+                <label for="phone">Telepon:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="address">Maps:</label>
+                <input type="text" id="address" name="address" required>
+                
+                <label for="service">Jenis Layanan Rumah Setrika Okta:</label>
+                <select id="service" name="service">
+                    <option value="cuci-kering">Cuci Kering</option>
+                    <option value="setrika">Setrika</option>
+                    <option value="paket-hemat">Cuci dan Setrika</option>
+                </select>
+                
+                <button type="submit">Jemput Exspress</button>
+            </form>
+            
+            <script>
+                document.getElementById('form').addEventListener('submit', function(event) {
+                    event.preventDefault(); // Mencegah reload halaman
+            
+                    const name = document.getElementById('name').value;
+                    const address = document.getElementById('address').value;
+                    const phone = document.getElementById('phone').value;
+                    const service = document.getElementById('service').value;
+            
+                    const message = `Halo, saya ingin memesan layanan Rumah Setrika Okta:%0A%0ANama: ${name}%0AAlamat: ${address}%0ATelepon: ${phone}%0AJenis Layanan: ${service}`;
+                    const whatsappURL = `https://wa.me/6288225497218?text=${message}`;
+            
+                    window.open(whatsappURL, '_blank');
+                });
+            </script>
+        </div>
+    </section>
+    
+    <footer id="contact">
+        <div class="container">
+            <p>Hubungi Kami: 082329333830| Rumah Setrika Okta</p>
+            <p>&copy; 2024 Laundry Antar Jemput</p>
+        </div>
+    </footer>
+</body>
+</html>
